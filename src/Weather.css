@@ -1,0 +1,11 @@
+
+.wrapper form{
+    padding:1rem;
+}
+.wrapper form input, button{
+    margin:.5rem;
+    padding:.5rem;
+}
+.wrapper .result{
+    padding:1rem
+}

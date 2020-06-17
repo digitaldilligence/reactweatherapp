@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './Weather.css'
 export class Weather extends Component {
     state = {
         city: '',
@@ -25,13 +25,14 @@ export class Weather extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="wrapper">
               <h1>Weather app</h1>
               <h3>Access current weather data for any location on Earth including over 200,000 cities!
                 Current weather is frequently updated based on global models and data from more than 40,000 weather stations.</h3>  
               
               <form onSubmit={this.handleSubmit}>
                   <input type="text" placeholder="Enter your city" id="city" name="city"/>
+                  <br />
                   <button>Submit</button>
               </form>
               <div className="result">
